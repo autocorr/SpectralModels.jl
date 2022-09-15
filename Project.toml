@@ -1,13 +1,18 @@
 name = "SpectralModels"
 uuid = "19d18bf1-850e-46c8-bfb4-a0c3983d0455"
-authors = ["brian.e.svoboda@gmail.com"]
+authors = ["Brian Svoboda <brian.e.svoboda@gmail.com>"]
 version = "0.1.0"
+
+[deps]
+LoopVectorization = "bdcacae8-1622-11e9-2a5c-532679323890"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 
 [compat]
 julia = "1"
 
 [extras]
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test"]
+test = ["Test", "PyCall"]
